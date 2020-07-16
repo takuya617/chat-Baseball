@@ -1,0 +1,20 @@
+.contentsRoom
+  = @name
+  さんの投稿一覧
+  - @posts.each do |post|
+    .contentsimage
+      = image_tag post.image
+      .Show
+        .post
+          .post-date
+            投稿日
+            = post.created_at
+          .post-date
+            好きな選手
+            = post.player
+          .post-date
+            好きな球団
+            = post.team
+          .post-date
+            期待の若手選手
+            = post.Recommended_player

@@ -1,0 +1,100 @@
+.contentsRoom{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 900px;
+}
+
+.contentsimage {
+  display: flex;
+  img{
+  margin: 20px 0;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(41,41,41,0.2);
+  background-color: whitesmoke;
+  box-sizing: border-box;
+  }
+}
+
+.Show{
+  margin: 20px 0;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(41,41,41,0.2);
+  background-color: whitesmoke;
+  box-sizing: border-box;
+}
+
+.post{
+  margin: 0 0 20px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 20px;
+  color: #666;
+  a {
+    text-decoration: none;
+  }
+}
+
+.post-date{
+  width: 100%;
+  margin: 0 0 85px;
+  padding: 20px;
+  border: 1px solid #D8D8D8;
+  border-radius: 5px;
+  font-family: "游ゴシック",
+}
+
+.link {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container{
+  margin: 20px 0;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(41,41,41,0.2);
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.comentbox{
+  width: 100%;
+  margin: 5px 0 15px;
+  padding: 10px;
+  border: 1px solid #D8D8D8;
+  border-radius: 5px;
+  font-family: "游ゴシック", "YuGothic";
+}
+
+.comentbtn{
+  background-color: gold;
+    border-radius: 20px;
+    color: black;
+    border: 0;
+    font-size: 18px;
+    width: 100%;
+    margin: 5px 0 50px;
+    padding: 20px;
+}
+
+.comments{
+  padding: 5px;
+}
+
+.commenttext{
+  line-height: 1.57;
+    letter-spacing: 0.15em;
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+}
+
+.comentlink{
+  margin-top: 10px;
+  a{
+    text-decoration: none;
+    color: forestgreen;
+  }
+}

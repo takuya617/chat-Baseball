@@ -1,0 +1,75 @@
+.Wrapper
+  .PostsList
+    ⚾️投稿一覧⚾️
+    = form_with(url: search_posts_path, local: true, method: :get, class: "search-form") do |form|
+      = form.text_field :keyword, placeholder: "投稿者を検索する", class: "search-input"
+      = form.submit "検索", class: "search-btn"
+      - @posts.each do |post|
+        .Posts
+          .Posts__day
+            = post.created_at
+          .Posts__user
+            = link_to "/users/(post.user_id)" do
+              投稿者　
+              = post.user.name 
+            .team
+              好きなチーム　
+              = post.team
+          .Posts__show
+            = link_to post_path(post.id), method: :get do
+              詳細
+            -if user_signed_in? && current_user.id == post.user_id
+              .Posts__reset
+                = link_to  edit_post_path(post.id), method: :get do
+                  編集
+                = link_to  post_path(post.id), method: :delete do
+                  削除
+  .Chat
+    .MessageField
+      .MessageBox
+        .Message-logo
+          ⚾️野球を好きになろう⚾️
+        .Message
+          = image_tag("998bb39b1786928f649efb9d62f1a4c5.jpeg", class:"picture")
+      .languageRoom
+        %h2.title
+          ⚾️野球の魅力⚾️
+        .Baseball
+          .section
+            %h3.title-name
+              1対1の対決
+            %p.snapshot
+              = image_tag("e6ec0fbc57bc8ec53b83db36bc6aee05.png", class:"picture01")
+            %p.text01
+              野球とは、必ず「1選手（投手）対1選手（打者）」の対決が毎回繰り広げられます。
+              団体スポーツでありながら個人競技の要素が非常に大きいのが最大の特徴です。
+              選手同士の意地と意地がぶつかり合うのは、胸が熱くなります。
+          .section
+            %h3.title-name
+              表と裏の攻守
+            %p.snapshot
+              = image_tag("e6ec0fbc57bc8ec53b83db36bc6aee05.png", class:"picture01")
+            %p.text01
+              表と裏で攻撃と守備が交互に行われ,攻撃と守備の機会が均等に与えられている点も野球の特徴です。
+              時間が決められているスポーツならば逃げきれても、野球は最後まできっちり3アウトを取らないと逃げきれないのが特徴です。
+          .section
+            %h3.title-name
+              皆が楽しめるスポーツ
+            %p.snapshot
+              = image_tag("e6ec0fbc57bc8ec53b83db36bc6aee05.png", class:"picture01")
+            %p.text01
+              年齢を問わず草野球を楽しむ方が多いのも特徴です。
+              これは攻守交代がある故に投手以外は比較的休んでいる時間が多いから中高年の方でもそんなに体力を使わないでできるということも言えるでしょう。
+    -# .footer
+    -#   Copyright chat-Baseball 2020
+    -#   .footer__room
+    -#     %ul.cf
+    -#       %li.write
+    -#         =link_to "#" do
+    -#           新規投稿
+    -#       %li.video
+    -#         =link_to "#" do
+    -#           映像
+    -#       %li.standing
+    -#         =link_to "#" do
+    -#           ランキング

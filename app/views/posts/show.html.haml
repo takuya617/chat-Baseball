@@ -1,0 +1,43 @@
+.contentsRoom
+  .contentsimage
+    = image_tag @post.image
+    .Show
+      .post
+        .post-date
+          投稿日
+          = @post.created_at
+        .post-date
+          好きな選手
+          = @post.player
+        .post-date
+          好きな球団
+          = @post.team
+        .post-date
+          期待の若手選手
+          = @post.Recommended_player
+        .post.user
+          投稿者　
+          =@post.user.name
+        -if user_signed_in? && current_user.id == @post.user_id     
+          .resets
+            = link_to  edit_post_path(@post.id), method: :get do
+              編集
+          .resets
+            = link_to  post_path(@post.id), method: :delete do
+              削徐
+  .container
+    - if current_user
+      = form_with(model: [@post, @comment], local: true) do |form|
+        = form.text_area :text, class: "comentbox", placeholder: "コメントする", rows: "2"
+        = form.submit "送信",class: "comentbtn"
+    - else
+      ⚾️⚾️コメントの投稿には新規登録/ログインが必要です⚾️⚾️
+    .comments
+      .commenttext
+        ⚾️コメント一覧⚾️
+      - if @comments
+        - @comments.each do |comment|
+          .comentlink
+            = link_to comment.user.name, "/users/#{comment.user_id}"
+            ：
+            = comment.text

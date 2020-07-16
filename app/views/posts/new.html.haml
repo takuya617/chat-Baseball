@@ -1,0 +1,8 @@
+.contentsRoom
+  .content
+    = form_with(model: @post, local: true) do |form|
+      .form
+        ⚾️投稿してください⚾️
+        = render partial: "form", locals: { form: form }
+
+

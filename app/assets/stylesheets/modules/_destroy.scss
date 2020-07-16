@@ -1,0 +1,27 @@
+.success{
+  margin: 20px 0;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(41,41,41,0.2);
+  background-color: whitesmoke;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.succes{
+  margin: 20px auto;
+  font-size: 30px;
+}
+.btn{
+  padding: 15px 20px;
+    font-size: 30px;
+    border: 2px solid gold;
+    color: gold;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+  a{
+    text-decoration: none;
+    color: goldenrod;
+  }
+}

@@ -1,0 +1,44 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title ChatBaseball
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+  .header
+    %h1.logo
+      = link_to "/" do
+        = image_tag("125631107.jpg", class:"photo")
+    .nav
+      %ul.cf
+        - if user_signed_in?
+          %li.list
+            = link_to new_post_path do
+              新規投稿
+          %li.list
+            = link_to "#" do
+              動画
+          %li.list
+            = link_to "#" do
+              ランキング
+    %ul.login
+      - if user_signed_in?
+        %li.enter
+          = current_user.name
+        %li.enter
+          = link_to "/users/#{current_user.id}" do
+            マイページ
+        %li.enter  
+          = link_to destroy_user_session_path, method: :delete do
+            ログアウト
+      - else
+        %li.enter
+          = link_to new_user_registration_path do
+            登録
+        %li.enter
+          = link_to new_user_session_path do
+            ログイン 
+  = yield
