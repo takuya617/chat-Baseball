@@ -17,8 +17,14 @@
           = @post.Recommended_player
         .post.user
           投稿者　
-          =@post.user.name
-        -if user_signed_in? && current_user.id == @post.user_id     
+          = @post.user.name
+        .likes
+          .like
+            いいね件数
+            = @post.likes.count
+          .element#like{id:@post.id}
+            = render partial: 'likes/like', locals: { post: @post}
+        -if user_signed_in? && current_user.id == @post.user_id
           .resets
             = link_to  edit_post_path(@post.id), method: :get do
               編集
@@ -27,9 +33,9 @@
               削徐
   .container
     - if current_user
-      = form_with(model: [@post, @comment], local: true) do |form|
-        = form.text_area :text, class: "comentbox", placeholder: "コメントする", rows: "2"
-        = form.submit "送信",class: "comentbtn"
+      = form_with(model: [@post, @comment], local: true, id: "new_comment") do |form|
+        = form.text_area :text, class: "commentbox", placeholder: "コメントする", rows: "2"
+        = form.submit "送信",class: "commentbtn"
     - else
       ⚾️⚾️コメントの投稿には新規登録/ログインが必要です⚾️⚾️
     .comments
@@ -37,7 +43,7 @@
         ⚾️コメント一覧⚾️
       - if @comments
         - @comments.each do |comment|
-          .comentlink
+          .commentlink
             = link_to comment.user.name, "/users/#{comment.user_id}"
             ：
             = comment.text
