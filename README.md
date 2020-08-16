@@ -89,7 +89,8 @@ DEMO
 ・ユーザー登録画面
 
 ・新規投稿画面
-（https://user-images.githubusercontent.com/67043955/90332077-d5311780-dff4-11ea-8836-d52272fa02fc.png）
+
+
 
 ・投稿詳細ページ
 
