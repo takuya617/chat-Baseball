@@ -88,11 +88,11 @@ DEMO
 
 ・ユーザー登録画面
 
-
+https://i.gyazo.com/a3dee6c8cf91ea91cbfaae793bf054cd.jpg
 
 ・ログイン画面
 
-
+https://i.gyazo.com/049463b2dbeeaed3559117996dcbd49e.jpg
 
 ・新規投稿画面
 
