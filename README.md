@@ -80,6 +80,10 @@ BaseBallーChat
 
 ・投稿内容のイイねが多い順に表示ができるようにランキング機能な物を入れてみたいです。
 
+DEMO
+
+・Topページ
+
 (https://user-images.githubusercontent.com/67043955/90331931-6f905b80-dff3-11ea-8803-be2e6979b2c5.gif)
 
 
