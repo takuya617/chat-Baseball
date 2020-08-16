@@ -72,7 +72,7 @@
 
 イイね機能が非同期通信出来ていないので、非同期通信できるようにしたいです。
 
-投稿内容のイイねが多い順にランキング機能な物を入れてみたいです。
+投稿内容のイイねが多い順に表示ができるようにランキング機能な物を入れてみたいです。
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
