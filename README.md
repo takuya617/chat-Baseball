@@ -40,25 +40,6 @@
 - belongs_to :movie
 - belongs_to :user
 
-## moviesテーブル
-|Column|Type|Options|
-|------|----|-------|
-|text|text|
-|movie|text||
-
-### Association
-- belongs_to :user
-- has_many:comments
-
-## japansテーブル
-|Column|Type|Options|
-|------|----|-------|
-|japan_text|string|null:false|
-
-### Association
-- belongs_to :user
-- has_many:likes
-
 ## likesテーブル
 |Column|Type|Options|
 |------|----|-------|
