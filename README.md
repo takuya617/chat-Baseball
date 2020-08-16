@@ -88,7 +88,11 @@ DEMO
 
 ・ユーザー登録画面
 
-https://i.gyazo.com/323aad0c168968f408c9dc4a6d34b3f3.jpg
+
+
+・ログイン画面
+
+
 
 ・新規投稿画面
 
