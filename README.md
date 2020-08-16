@@ -86,6 +86,12 @@ DEMO
 
 (https://user-images.githubusercontent.com/67043955/90331931-6f905b80-dff3-11ea-8803-be2e6979b2c5.gif)
 
+・ユーザー登録画面
+
+・新規投稿画面
+
+・投稿詳細ページ
+
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
