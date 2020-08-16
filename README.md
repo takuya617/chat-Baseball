@@ -88,6 +88,8 @@ DEMO
 
 ・ユーザー登録画面
 
+https://i.gyazo.com/323aad0c168968f408c9dc4a6d34b3f3.jpg
+
 ・新規投稿画面
 
 https://i.gyazo.com/f3d78df976fc8876dd6da2bd7f85e0d0.jpg
