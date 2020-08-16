@@ -50,7 +50,11 @@
 - belongs_to :user
 - belongs_to :japan
 
-#概要
+アプリ名
+
+BaseBallーChat
+
+概要
 
 ・新規投稿機能ができる（好きな選手、好きな球団、期待の選手、画像など）
 
