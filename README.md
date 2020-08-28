@@ -2,9 +2,9 @@
 
 アプリ名
 
-BaseBallーChat
+chat-Baseball
 
-概要
+機能紹介
 
 ・新規投稿機能ができる。（好きな選手、好きな球団、期待の選手、画像など）
 
@@ -96,7 +96,7 @@ https://i.gyazo.com/f3d78df976fc8876dd6da2bd7f85e0d0.jpg
 - belongs_to :user
 - belongs_to :japan
 
-・実装予定の内容
+実装予定の内容
 
 ・イイね機能が非同期通信出来ていないので、非同期通信できるようにしたいです。
 
