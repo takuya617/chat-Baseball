@@ -46,7 +46,7 @@ https://i.gyazo.com/f3d78df976fc8876dd6da2bd7f85e0d0.jpg
 
 (https://user-images.githubusercontent.com/67043955/90332325-da8f6180-dff6-11ea-8460-d5d5109cbfce.gif)
 
-# baseball-chat DB設計
+# DB設計
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
